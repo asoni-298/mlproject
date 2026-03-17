@@ -1,0 +1,293 @@
+export const portfolioData = {
+  personal: {
+    name: 'Ashish Soni',
+    title: 'GenAI Data Scientist | LLM Systems Engineer | RAG Architect',
+    location: 'Ahmedabad, India',
+    email: 'soniashish956@gmail.com',
+    phone: '+91 8236980719',
+    linkedin: 'https://linkedin.com/in/ashish-soni',
+    github: 'https://github.com/ashish-soni',
+    summary:
+      'AI engineer with 3+ years of experience building production-scale machine learning and generative AI systems. Specialized in LLM applications, RAG architectures, forecasting models, and AI-driven decision intelligence platforms.',
+    about:
+      'I am a GenAI engineer focused on building real-world AI systems that transform complex enterprise data into actionable intelligence. My expertise lies at the intersection of Large Language Models, Retrieval Augmented Generation, Machine Learning Forecasting, backend AI infrastructure, and data-driven decision platforms. At Adani AI Labs I design and deploy production-grade AI systems used for enterprise intelligence, forecasting, and optimization.',
+  },
+
+  experience: [
+    {
+      id: 1,
+      company: 'Adani AI Labs',
+      role: 'GenAI Data Scientist',
+      duration: 'August 2022 - Present',
+      location: 'Ahmedabad, India',
+      overview:
+        'Designing enterprise AI systems powered by machine learning, large language models, and data pipelines to enable intelligent decision-making across business operations.',
+      keyContributions: [
+        'Architected scalable agentic RAG ecosystem routing queries across GPT-4o, Claude 3.5, and Gemini',
+        'Built asynchronous extraction agents executing 15+ parallel semantic retrieval operations',
+        'Reduced dashboard generation latency by 70%',
+        'Implemented deterministic incremental indexing using SHA-256 hashing',
+        'Integrated Azure Document Intelligence OCR for enterprise document processing',
+      ],
+      technologies: [
+        'Python',
+        'FastAPI',
+        'LangChain',
+        'FAISS',
+        'Azure Blob Storage',
+        'Azure Document Intelligence',
+        'AsyncIO',
+        'Vector Databases',
+        'PostgreSQL',
+        'Streamlit',
+      ],
+      highlights: [
+        'Architected scalable agentic RAG ecosystem routing queries across GPT-4o, Claude 3.5, and Gemini',
+        'Built asynchronous extraction agents capable of executing 15+ parallel semantic retrieval operations',
+        'Reduced dashboard generation latency by 70%',
+        'Implemented deterministic incremental indexing pipelines using SHA-256 hashing',
+        'Integrated Azure Document Intelligence OCR for enterprise document processing',
+      ],
+    },
+  ],
+
+  projects: [
+    {
+      id: 1,
+      title: 'Enterprise Agentic RAG System',
+      subtitle: 'AI Agent for Project Intelligence',
+      category: 'LLM & RAG',
+      impact: '70% latency reduction',
+      description:
+        'Built an enterprise AI platform that converts unstructured enterprise data into structured project intelligence using agentic RAG architecture. This system enables intelligent decision-making by synthesizing data from multiple sources including financial records, meeting notes, and project tracking systems.',
+      features: [
+        'Multi-model LLM orchestration (GPT-4o, Claude 3.5, Gemini)',
+        'Autonomous query decomposition agents',
+        'Vector retrieval systems with semantic search',
+        'Enterprise knowledge ingestion pipelines',
+        'Real-time dashboard generation',
+      ],
+      keyContributions: [
+        'Architected a scalable agentic RAG ecosystem that routes queries across multiple foundation models',
+        'Built asynchronous extraction agents using Python asyncio capable of executing 15+ parallel semantic retrieval operations',
+        'Reduced dashboard generation latency by 70%',
+        'Implemented deterministic incremental indexing pipelines using SHA-256 hashing and ETags',
+        'Integrated Azure Document Intelligence OCR to extract structured knowledge from enterprise documents',
+      ],
+      techStack: [
+        'Python',
+        'FastAPI',
+        'LangChain',
+        'FAISS',
+        'Azure Blob Storage',
+        'Azure Document Intelligence',
+        'AsyncIO',
+        'Vector Databases',
+      ],
+      results:
+        'Enabled executives to generate real-time project intelligence reports with 70% faster generation times',
+      metrics: [
+        { label: 'Latency Reduction', value: '70%' },
+        { label: 'Parallel Operations', value: '15+' },
+        { label: 'Foundation Models', value: '3' },
+      ],
+      link: '#',
+      github: 'https://github.com/ashish-soni/enterprise-rag',
+    },
+    {
+      id: 2,
+      title: 'Coal Price Forecasting System',
+      subtitle: 'Commodity Price Prediction Platform',
+      category: 'Time Series & ML',
+      impact: '99.78% accuracy',
+      description:
+        'Developed a sophisticated commodity forecasting platform that predicts future coal prices using advanced statistical models, machine learning algorithms, and external signals from global news sources. This system integrates sentiment analysis to capture geopolitical and economic impacts.',
+      features: [
+        'Multi-algorithm ensemble forecasting',
+        'NLP-based sentiment analysis from news',
+        'Time series decomposition and analysis',
+        'Interactive web visualization dashboards',
+        'Real-time price trend analysis',
+      ],
+      keyContributions: [
+        'Developed ensemble forecasting models achieving 99.78% prediction accuracy',
+        'Integrated NLP-based sentiment analysis from global news sources to capture geopolitical and economic signals',
+        'Built web applications using Flask and R Shiny for visualization',
+        'Implemented multiple forecasting algorithms (XGBoost, Random Forest, Holt Winters)',
+        'Created volatility pattern recognition system',
+      ],
+      techStack: [
+        'Python',
+        'Scikit-learn',
+        'XGBoost',
+        'Random Forest',
+        'NLP/NLTK',
+        'Flask',
+        'R Shiny',
+        'Time Series Analysis',
+      ],
+      results:
+        'Achieved 99.78% prediction accuracy enabling better decision-making for supply chain management',
+      metrics: [
+        { label: 'Prediction Accuracy', value: '99.78%' },
+        { label: 'Algorithms Used', value: '5' },
+        { label: 'Data Sources', value: 'News + Market' },
+      ],
+      link: '#',
+      github: 'https://github.com/ashish-soni/coal-forecasting',
+    },
+    {
+      id: 3,
+      title: 'Demand Forecasting & Inventory Optimization',
+      subtitle: 'Supply Chain Intelligence Platform',
+      category: 'Optimization',
+      impact: 'Rs. 2 Crore revenue uplift',
+      description:
+        'Built predictive models and optimization algorithms to align supply-demand patterns in the coal supply chain. This system analyzes historical patterns and generates data-driven inventory recommendations for optimal cost management.',
+      features: [
+        'Multi-dataset demand forecasting',
+        'Inventory optimization algorithms',
+        'Supply-demand alignment',
+        'Recommendations engine',
+        'Financial impact analysis',
+      ],
+      keyContributions: [
+        'Performed demand forecasting across sourcing, dispatch, and sales datasets',
+        'Developed optimization algorithms to recommend optimal inventory levels based on predicted demand',
+        'Generated Rs. 2 Crore revenue uplift through improved inventory management',
+        'Implemented constraint-based optimization models',
+        'Created recommendation system for inventory planning',
+      ],
+      techStack: [
+        'Python',
+        'Machine Learning',
+        'Optimization Models',
+        'Pandas',
+        'Scikit-learn',
+        'Linear Programming',
+        'Data Analysis',
+      ],
+      results:
+        'Achieved Rs. 2 Crore revenue uplift by optimizing inventory levels and reducing carrying costs',
+      metrics: [
+        { label: 'Revenue Impact', value: 'Rs. 2 Cr' },
+        { label: 'Datasets Analyzed', value: '3' },
+        { label: 'Optimization Models', value: 'Advanced' },
+      ],
+      link: '#',
+      github: 'https://github.com/ashish-soni/inventory-optimization',
+    },
+    {
+      id: 4,
+      title: 'Customer Intelligence Platform',
+      subtitle: 'Churn Prediction & Segmentation System',
+      category: 'ML & Analytics',
+      impact: 'Rs. 17 Crore saved',
+      description:
+        'Developed machine learning models to analyze customer behavior and predict churn risk. This platform enables targeted retention strategies by identifying at-risk customers and segmenting them by value.',
+      features: [
+        'Customer segmentation modeling',
+        'Churn risk prediction',
+        'Behavioral analytics',
+        'Retention strategy recommendations',
+        'Value-based customer classification',
+      ],
+      keyContributions: [
+        'Built customer segmentation models using classification algorithms to categorize customers into high, medium, and low-value segments',
+        'Developed a churn prediction model to identify customers at risk of leaving',
+        'Enabled targeted retention strategies preventing potential revenue loss of Rs. 17 Crore',
+        'Implemented behavioral pattern recognition',
+        'Created actionable insights for sales team',
+      ],
+      techStack: [
+        'Python',
+        'Classification Algorithms',
+        'Machine Learning',
+        'Customer Analytics',
+        'Feature Engineering',
+        'Segmentation Models',
+      ],
+      results:
+        'Prevented potential revenue loss of Rs. 17 Crore through targeted retention strategies',
+      metrics: [
+        { label: 'Revenue Saved', value: 'Rs. 17 Cr' },
+        { label: 'Customer Segments', value: '3' },
+        { label: 'Churn Reduction', value: 'Significant' },
+      ],
+      link: '#',
+      github: 'https://github.com/ashish-soni/customer-intelligence',
+    },
+  ],
+
+  skills: {
+    'AI & Machine Learning': [
+      'Large Language Models',
+      'Agentic AI',
+      'RAG (Retrieval Augmented Generation)',
+      'NLP & Text Processing',
+      'Classification Models',
+      'Time Series Forecasting',
+      'Optimization Modeling',
+      'Deep Learning',
+    ],
+    'Programming Languages': ['Python', 'R', 'SQL', 'DAX Query', 'JavaScript/TypeScript'],
+    'Data Science Libraries': [
+      'NumPy',
+      'Pandas',
+      'Scikit-learn',
+      'TensorFlow',
+      'PyTorch',
+      'NLTK',
+      'Statsmodels',
+    ],
+    'AI Frameworks': ['LangChain', 'Agentic AI Systems', 'OpenAI API', 'Gemini API'],
+    'Backend Frameworks': ['FastAPI', 'Flask', 'Streamlit', 'R Shiny', 'Node.js'],
+    'Tools & Platforms': [
+      'Databricks',
+      'Azure ML',
+      'Power BI',
+      'MySQL',
+      'OCR Systems',
+      'Git',
+      'Docker',
+      'AWS/Azure',
+    ],
+    'Frontend & Visualization': [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Three.js',
+      'Framer Motion',
+      'TailwindCSS',
+      'Recharts',
+    ],
+  },
+
+  education: [
+    {
+      institution: 'SGSITS Indore',
+      degree: 'B.Tech Industrial Engineering',
+      cgpa: '8.32',
+      graduationYear: 2022,
+      location: 'Indore, India',
+    },
+  ],
+
+  internships: [
+    { company: 'DRDO', title: 'FEA Analysis of Connecting Rod', duration: 'June 2021 - August 2021' },
+    { company: 'National Thermal Power Corporation', title: 'Power Plant Operations', duration: 'July 2021 - August 2021' },
+    { company: 'IIT Roorkee', title: 'Guided Wave Propagation Analysis', duration: 'May 2021 - June 2021' },
+    { company: 'SDNX Delhi (ISRO Research Project)', title: 'Inflatable Habitat Research', duration: 'July 2020 - December 2020' },
+  ],
+
+  achievements: [
+    'Spot Recognition Award for Machine Learning Model Development',
+    'Rs. 2 Crore revenue uplift through inventory optimization',
+    'Rs. 17 Crore revenue saved through churn prediction system',
+    '70% latency reduction in dashboard generation',
+    '99.78% accuracy in commodity price forecasting',
+  ],
+
+  summary:
+    'Passionate about building AI systems that solve real-world problems. With 3+ years of experience in machine learning and generative AI, I specialize in creating production-grade systems that drive business impact. Currently focused on agentic AI architecture and enterprise RAG systems.',
+};
