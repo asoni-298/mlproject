@@ -1,4 +1,4 @@
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { GoogleGenAI } from '@google/genai';
 
 type ChatMessage = {
   role: 'user' | 'assistant';
@@ -24,8 +24,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  const genAI = new GoogleGenAI({ apiKey });
 
   const transcript = messages
     .map((message) => `${message.role === 'user' ? 'User' : 'Assistant'}: ${message.content}`)
@@ -45,13 +44,16 @@ ${transcript}
 Respond to the latest user message.
 `;
 
-  const result = await model.generateContentStream(prompt);
+  const result = await genAI.models.generateContentStream({
+    model: 'gemini-1.5-flash',
+    contents: prompt,
+  });
 
   const stream = new ReadableStream({
     async start(controller) {
       try {
-        for await (const chunk of result.stream) {
-          controller.enqueue(encoder.encode(chunk.text()));
+        for await (const chunk of result) {
+          controller.enqueue(encoder.encode(chunk.text ?? ''));
         }
       } catch {
         controller.enqueue(

@@ -1,12 +1,14 @@
 export const portfolioData = {
   personal: {
     name: 'Ashish Soni',
-    title: 'GenAI Data Scientist | LLM Systems Engineer | RAG Architect',
-    location: 'Ahmedabad, India',
+    title: 'GenAI Data Scientist | AI/ML Engineer | Data Scientist',
+    desiredRoleLabel: 'Role Looking For',
+    location: 'Ahmedabad, Gujarat',
+    hometown: 'Indore, Madhya Pradesh',
     email: 'soniashish956@gmail.com',
     phone: '+91 8236980719',
-    linkedin: 'https://linkedin.com/in/ashish-soni',
-    github: 'https://github.com/ashish-soni',
+    linkedin: 'https://www.linkedin.com/in/ashish-soni12/',
+    github: 'https://github.com/asoni-298',
     summary:
       'AI engineer with 3+ years of experience building production-scale machine learning and generative AI systems. Specialized in LLM applications, RAG architectures, forecasting models, and AI-driven decision intelligence platforms.',
     about:

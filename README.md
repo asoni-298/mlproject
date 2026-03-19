@@ -12,6 +12,8 @@ Production-ready AI engineer portfolio built with Next.js App Router, TypeScript
 - Forecasting charts built with Recharts
 - Live GitHub project explorer using the GitHub REST API
 - Gemini-powered chatbot demo with streaming responses through `/api/chat`
+- Floating recruiter pre-screening agent with memory and scheduling flow through `/api/recruiter-agent`
+- Optional Google Workspace integration for Gmail handoff, Google Calendar booking, and Drive-based JD upload
 - Vercel-friendly API routes and environment variable setup
 
 ## Stack
@@ -44,6 +46,12 @@ cp .env.local.example .env.local
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+GOOGLE_REFRESH_TOKEN=your_google_refresh_token
+GOOGLE_CALENDAR_ID=primary
+GOOGLE_DRIVE_FOLDER_ID=your_drive_folder_id
+ASHISH_NOTIFICATION_EMAIL=your_notification_email
 GITHUB_TOKEN=your_github_token_here
 ```
 
@@ -78,6 +86,30 @@ The app is App Router based and fully compatible with Vercel deployment.
 
 - Streams Gemini responses as plain text
 - Falls back gracefully when `GEMINI_API_KEY` is missing
+
+### `POST /api/recruiter-agent`
+
+- Streams recruiter-ready screening responses as plain text
+- Uses Gemini with resume-grounded prompting, salary/location/notice-period handling, and mock scheduling slots
+- Falls back gracefully when `GEMINI_API_KEY` is missing
+
+### `GET /api/recruiter-agent/availability`
+
+- Returns recruiter-visible interview slots
+- Uses Google Calendar when OAuth credentials are configured
+- Falls back to mock availability otherwise
+
+### `POST /api/recruiter-agent/book`
+
+- Books a selected slot
+- Creates a Google Calendar event when configured
+- Sends a recruiter-summary notification email when Gmail is configured
+
+### `POST /api/recruiter-agent/handoff`
+
+- Accepts recruiter details and an optional JD upload
+- Uploads the JD to Google Drive when configured
+- Sends Ashish a Gmail summary with the gathered recruiter details
 
 ### `GET /api/github?username=ashish-soni`
 
